@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F1021" minimumToolsVersion="Xcode 7.0">
+    <entity name="TestDataLog" representedClassName="TestDataLog" syncable="YES">
+        <attribute name="attributes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="command" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="entityTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="globalId" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="localId" optional="YES" attributeType="Transformable" valueTransformerName="ManagedObjectIdTransformer" syncable="YES"/>
+        <attribute name="origin" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="userInfo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TestGroup" representedClassName="TestGroup" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longNameAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="testItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TestItem" inverseName="testGroup" inverseEntity="TestItem" syncable="YES"/>
+        <relationship name="testParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TestParent" inverseName="testGroups" inverseEntity="TestParent" syncable="YES"/>
+    </entity>
+    <entity name="TestItem" representedClassName="TestItem" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="testGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TestGroup" inverseName="testItems" inverseEntity="TestGroup" syncable="YES"/>
+        <relationship name="testParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TestParent" inverseName="newRelationship" inverseEntity="TestParent" syncable="YES"/>
+    </entity>
+    <entity name="TestParent" representedClassName="TestParent" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="testAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TestItem" inverseName="testParent" inverseEntity="TestItem" syncable="YES"/>
+        <relationship name="testGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TestGroup" inverseName="testParent" inverseEntity="TestGroup" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TestGroup" positionX="-225" positionY="-25" width="128" height="118"/>
+        <element name="TestItem" positionX="108" positionY="74" width="128" height="88"/>
+        <element name="TestParent" positionX="-56" positionY="-198" width="128" height="103"/>
+        <element name="TestDataLog" positionX="-216" positionY="216" width="128" height="163"/>
+    </elements>
+</model>

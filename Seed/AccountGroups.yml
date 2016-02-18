@@ -1,0 +1,44 @@
+  [
+      {
+          "name": "Income",
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Cash",
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Non-cash",
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Expense",
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Income!",
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Expense!",
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Cash!",
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      }
+  ]

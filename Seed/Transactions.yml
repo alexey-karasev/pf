@@ -1,0 +1,38 @@
+  [
+      {
+          "value":500,
+          "user": {
+              "nick": "Alexey Karasev"
+          },
+          "creditAccount": {
+              "name":"Salary"
+          },
+          "debitAccount": {
+              "name":"Bank"
+          }
+      },
+      {
+          "value":100,
+          "user": {
+              "nick": "Alexey Karasev"
+          },
+          "creditAccount": {
+              "name":"Bank"
+          },
+          "debitAccount": {
+              "name":"Credit"
+          }
+      },
+      {
+          "value":150,
+          "user": {
+              "nick": "Alexey Karasev"
+          },
+          "creditAccount": {
+              "name":"Bank"
+          },
+          "debitAccount": {
+              "name":"Shopping"
+          }
+      }
+  ]

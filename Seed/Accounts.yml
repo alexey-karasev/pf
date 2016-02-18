@@ -1,0 +1,283 @@
+  [
+      {
+          "name": "Salary",
+          "category": 1,
+          "group": {
+              "name": "Income"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Business",
+          "category": 1,
+          "group": {
+              "name": "Income"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Random",
+          "category": 1,
+          "group": {
+              "name": "Income"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Bank",
+          "category": 0,
+          "group": {
+              "name": "Cash"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Wallet",
+          "category": 0,
+          "group": {
+              "name": "Cash"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Credit",
+          "category": 1,
+          "group": {
+              "name": "Non-Cash"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Credit Card",
+          "category": 1,
+          "group": {
+              "name": "Non-Cash"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Groceries",
+          "category": 0,
+          "group": {
+              "name": "Expense"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Eating Outside",
+          "category": 0,
+          "group": {
+              "name": "Expense"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Transport",
+          "category": 0,
+          "group": {
+              "name": "Expense"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "House",
+          "category": 0,
+          "group": {
+              "name": "Expense"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Shopping",
+          "category": 0,
+          "group": {
+              "name": "Expense"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Entertainment",
+          "category": 0,
+          "group": {
+              "name": "Expense"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+      {
+          "name": "Services",
+          "category": 0,
+          "group": {
+              "name": "Expense"
+          },
+          "user": {
+              "nick": "Alexey Karasev"
+          }
+      },
+
+      {
+          "name": "Salary!",
+          "category": 1,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Business!",
+          "category": 1,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Random!",
+          "category": 1,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Bank!",
+          "category": 0,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Wallet!",
+          "category": 0,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Credit!",
+          "category": 1,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Credit Card!",
+          "category": 1,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Groceries!",
+          "category": 0,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Eating Outside!",
+          "category": 0,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Transport!",
+          "category": 0,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "House!",
+          "category": 0,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Shopping!",
+          "category": 0,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Entertainment!",
+          "category": 0,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+      {
+          "name": "Services!",
+          "category": 0,
+          "group": {
+              "name": "Income!"
+          },
+          "user": {
+              "nick": "Nikolay Stoev"
+          }
+      },
+  ]

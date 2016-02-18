@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F1021" minimumToolsVersion="Automatic">
+    <entity name="Account" representedClassName="Account" syncable="YES">
+        <attribute name="category" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="visible" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <relationship name="accountGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AccountGroup" inverseName="accounts" inverseEntity="AccountGroup" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="name"/>
+            </userInfo>
+        </relationship>
+        <relationship name="creditTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="creditAccount" inverseEntity="Transaction" syncable="YES"/>
+        <relationship name="debitTransactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="debitAccount" inverseEntity="Transaction" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="accounts" inverseEntity="User" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="nick"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="AccountGroup" representedClassName="AccountGroup" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="accounts" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Account" inverseName="accountGroup" inverseEntity="Account" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="accountGroups" inverseEntity="User" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="nick"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="DataLog" representedClassName="DataLog" syncable="YES">
+        <attribute name="attributes" attributeType="String" syncable="YES"/>
+        <attribute name="command" attributeType="Integer 16" valueTransformerName="ManagedObjectIdTransformer" syncable="YES"/>
+        <attribute name="entityTitle" attributeType="String" syncable="YES"/>
+        <attribute name="globalId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="localId" attributeType="Transformable" valueTransformerName="ManagedObjectIdTransformer" syncable="YES"/>
+        <attribute name="origin" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="userInfo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Transaction" representedClassName="Transaction" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="creditAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="creditTransactions" inverseEntity="Account" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="name"/>
+            </userInfo>
+        </relationship>
+        <relationship name="debitAccount" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="debitTransactions" inverseEntity="Account" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="name"/>
+            </userInfo>
+        </relationship>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="transactions" inverseEntity="User" syncable="YES">
+            <userInfo>
+                <entry key="relatedByAttribute" value="nick"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nick" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="accountGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AccountGroup" inverseName="user" inverseEntity="AccountGroup" syncable="YES"/>
+        <relationship name="accounts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Account" inverseName="user" inverseEntity="Account" syncable="YES"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="user" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="-279" positionY="32" width="128" height="163"/>
+        <element name="AccountGroup" positionX="-479" positionY="-27" width="128" height="103"/>
+        <element name="DataLog" positionX="-398" positionY="225" width="128" height="178"/>
+        <element name="Transaction" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="User" positionX="-281" positionY="-225" width="128" height="118"/>
+    </elements>
+</model>
